@@ -3,16 +3,11 @@ import WomenClothes from "../components/clothes/WomenClothes";
 import FiltersWomen from "../components/filters/FiltersWomen";
 import { Col, Accordion } from "react-bootstrap";
 
-//<Accordion className="bg-light mt-2">
-
-
 function Women() {
-
     return (
       <>
       <SearchNavBarImage/>
-
-      
+    
       <Col>
          <Accordion className="bg-light mt-2">
            <Accordion.Item eventKey="0">
@@ -30,8 +25,7 @@ function Women() {
            <WomenClothes/>
            <WomenClothes/>
       </Col>  
-    </>
-      
+    </>     
     );
   }
   

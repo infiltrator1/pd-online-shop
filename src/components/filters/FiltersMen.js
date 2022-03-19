@@ -17,7 +17,7 @@ function FiltersMen() {
                         <Button variant="secondary">Search</Button>
                     </div>
             </Card.Body>
-        </Card>      
+        </Card>       
     )
 }
 

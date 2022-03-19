@@ -1,105 +1,84 @@
 import { Form } from "react-bootstrap";
 
 function TypeMen() {
+
+      const checkboxes = [
+            { 
+                label: "Jackets & Coats",
+                type: "jackets&coatsMen",
+            },
+            {
+                label: "Sweatshirts",
+                type: "sweatshirts",
+            }, 
+            {
+                  label: "Vests",
+                  type: "vests",
+            },
+            {
+                  label: "Shirts & Blouses",
+                  type: "shirts&blouses",
+            },
+            {
+                  label: "T-shirts",
+                  type: "t-shirts",
+            },
+            {
+                  label: "Shirts",
+                  type: "shirts",
+            },
+            {
+                  label: "Trousers",
+                  type: "trousers",
+            },
+            {
+                  label: "Shirts",
+                  type: "shirts",
+            },
+            {
+                  label: "Jeans",
+                  type: "jeans",
+            },
+            {
+                  label: "Shorts",
+                  type: "shorts",
+            },
+            {
+                  label: "Jeans",
+                  type: "jeans",
+            },
+            {
+                  label: "Swimwear",
+                  type: "swimwear",
+            },
+        ]
     
-    return(
-        <Form.Group 
-            className="mb-3" 
-            controlId="filterForm.ControlCheckboxes">
-        <Form.Label>
-            <h6>Type</h6>
-        </Form.Label>
-            <Form className="">
-                {['checkbox'].map((type) => (
-                    <>
-                    <div key={`inline-${type}`}>
-                        <Form.Check
-                              inline
-                              label="Jackets & Coats"
-                              name="jackets&coats"
-                              type={type}
-                              id={`inline-${type}-1`}
-                        />
-                        <Form.Check
-                              inline
-                              label="Sweatshirts"
-                              name="sweatshirts"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        <Form.Check
-                              inline
-                              label="Sweaters & Cardigans"
-                              name="sweaters&cardigans"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        <Form.Check
-                              inline
-                              label="Vests"
-                              name="vests"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        <Form.Check
-                              inline
-                              label="Shirts & Blouses "
-                              name="shirts&blouses"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        <Form.Check
-                              inline
-                              label="T-shirts"
-                              name="t-shirts"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        </div>
-                        <div key={`inline-${type}`}>
-                        <Form.Check
-                              inline
-                              label="Shirts"
-                              name="shirts"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        
-                        <Form.Check
-                              inline
-                              label="Trousers"
-                              name="trousers"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-            
-                        <Form.Check
-                              inline
-                              label="Jeans"
-                              name="jeans"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        <Form.Check
-                              inline
-                              label="Shorts"
-                              name="shorts"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        <Form.Check
-                              inline
-                              label="Swimwear"
-                              name="swimwear"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                    </div>
-                    </>
-                ))}
-            </Form>
-    </Form.Group>  
-    )
-}
+        return(
+            <Form.Group 
+                className="mb-3" 
+                controlId="filterForm.ControlCheckboxes">
+            <Form.Label>
+                <h6>Type</h6>
+            </Form.Label>
+            <div className="row justify-content-center">
+                  <div className="col-md-12 col-12">
+                        <Form className="d-flex justify-content-center flex-wrap">
+                        {checkboxes.map((checkbox) => (
+                              <Form.Check
+                              key={`inline-${checkbox.type}`}
+                                    inline
+                                    label={checkbox.label}
+                                    name={checkbox.type}
+                                    id={`inline-${checkbox.type}-1`}
+                              />
+                              
+                        ))}
+                  </Form>
+                  </div>
+            </div>
+                
+        </Form.Group>  
+        )
+    }
 
 export default TypeMen;

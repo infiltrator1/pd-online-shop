@@ -2,6 +2,10 @@ import { Form } from "react-bootstrap";
 
 function Size() {
     
+    const checkboxes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 
+                        '34', '36', '38', '40', '42', '44'];
+
+
     return(
         <Form.Group 
             className="mb-3" 
@@ -9,61 +13,22 @@ function Size() {
         <Form.Label>
             <h6>Size</h6>
         </Form.Label>
-            <Form>
-                {['checkbox'].map((type) => (
-                    <div key={`inline-${type}`}>
+        <div className="row justify-content-center">
+            <div className="col-md-4 col-12">
+            <Form className="d-flex justify-content-center flex-wrap">
+                {checkboxes.map((checkbox) => (
+                    <div key={`inline-${checkbox}`}>
                         <Form.Check
                               inline
-                              label="XXS"
-                              name="xxs"
-                              type={type}
-                              id={`inline-${type}-1`}
-                        />
-                        <Form.Check
-                              inline
-                              label="XS"
-                              name="xs"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
-                        <Form.Check
-                              inline
-                              label="S"
-                              name="s"
-                              type={type}
-                              id={`inline-${type}-3`}
-                        />
-                        <Form.Check
-                              inline
-                              label="M"
-                              name="m"
-                              type={type}
-                              id={`inline-${type}-4`}
-                        />
-                        <Form.Check
-                              inline
-                              label="L"
-                              name="l"
-                              type={type}
-                              id={`inline-${type}-5`}
-                        />
-                        <Form.Check
-                              inline
-                              label="XL"
-                              name="xl"
-                              type={type}
-                              id={`inline-${type}-6`}
-                        />
-                        <Form.Check
-                              inline
-                              label="XXL"
-                              name="xxl"
-                              type={type}
-                              id={`inline-${type}-7`}
+                              label={checkbox}
+                              name={checkbox}
+                              id={`inline-${checkbox}-1`}
                         />
                     </div>
                 ))}
             </Form>
+        </div>
+        </div>
     </Form.Group>
     )
 }

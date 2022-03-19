@@ -1,13 +1,33 @@
-/* The following block can be included in a custom.scss */
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
-/* make the customizations 
-$theme-colors: (
-    "info": tomato,
-    "danger": teal
-);
+// Customize Bootstrap Variables
+$accordion-button-active-bg: rgb(235, 232, 232);
+$accordion-button-active-color: black;
+$accordion-button-focus-box-shadow: 0 0 0 0 0.25rem rgba(153, 153, 153, 1);
 
-// import bootstrap to set changes 
-*/
 
+//Checkboxes
+$form-check-input-focus-box-shadow: 0 0 0 0.25rem rgba(153, 153, 153, 0.25);
+$form-check-input-checked-bg-color: rgb(160, 160, 160); 
+$form-check-input-checked-border-color: rgb(160, 160, 160); 
+
+//Login Modal
+$modal-content-bg: rgb(241, 240, 240);
+$btn-link-color: black;
+$btn-link-hover-color:rgb(160, 160, 160);
+
+//Button
+$btn-focus-box-shadow: 0 0 0 0 0.25rem rgba(153, 153, 153, 1);
+$btn-close-focus-shadow: 0 0 0 0 0.25rem rgba(153, 153, 153, 1);
+
+//Accordion
+$accordion-body-padding-y:0rem;
+$accordion-body-padding-x:0.45rem;
+
+//Order/12345
+
+// Load Bootstrap
 @import "~bootstrap/scss/bootstrap";
-

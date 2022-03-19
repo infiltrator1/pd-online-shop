@@ -1,7 +1,18 @@
 import { Form } from "react-bootstrap";
 
 function SortBy() {
-    
+
+    const checkboxes = [
+        { 
+            label: "Priced From Low To High",
+            type: "low",
+        },
+        {
+            label: "Priced From High to Low",
+            type: "high",
+        }
+    ]
+
     return(
         <Form.Group 
             className="mb-3" 
@@ -9,23 +20,16 @@ function SortBy() {
         <Form.Label>
             <h6>Sort</h6>
         </Form.Label>
-            <Form className="">
-                {['checkbox'].map((type) => (
-                    <div key={`inline-${type}`}>
+            <Form className="d-flex justify-content-center">
+                {checkboxes.map((checkbox) => (
+                    <div key={`inline-${checkbox.type}`}>
                         <Form.Check
                               inline
-                              label="Priced From Low To High"
-                              name="low"
-                              type={type}
-                              id={`inline-${type}-1`}
+                              label={checkbox.label}
+                              name={checkbox.type}
+                              id={`inline-${checkbox.type}-1`}
                         />
-                        <Form.Check
-                              inline
-                              label="Priced From High To Low"
-                              name="high"
-                              type={type}
-                              id={`inline-${type}-2`}
-                        />
+                        
                     </div>
                 ))}
             </Form>
