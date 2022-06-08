@@ -1,4 +1,3 @@
-import SearchNavBarImage from "../components/navbar/image/SearchNavBarImage";
 import KidsClothes from "../components/clothes/KidsClothes";
 import FiltersKids from "../components/filters/FiltersKids";
 import { Col, Accordion } from "react-bootstrap";
@@ -6,8 +5,6 @@ import { Col, Accordion } from "react-bootstrap";
 function Kids() {
     return (
       <>
-      <SearchNavBarImage/>
-    
       <Col>
          <Accordion className="bg-light mt-2">
            <Accordion.Item eventKey="0">

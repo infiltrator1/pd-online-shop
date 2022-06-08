@@ -7,7 +7,7 @@ function FiltersWomen() {
 
     return(
         
-        <Card className="text-center bg-light mt-2">
+        <Card className="text-center bg-light my-2">
             <Card.Body>
                 <Card.Title className="mb-3">Filters</Card.Title>
                     <SortBy/>

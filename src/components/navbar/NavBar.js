@@ -10,7 +10,7 @@ import Login from "./buttons/Login";
 
 function NavBar() {
     return (
-        <Navbar className="bg-transparent" fixed="top">
+        <Navbar className="bg-light border-bottom" fixed="top">
            <Container>
                <Navbar.Brand href="#home">P&D</Navbar.Brand>
                <Navbar.Toggle aria-controls="navbarScroll" />

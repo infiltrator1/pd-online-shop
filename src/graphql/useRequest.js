@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { GraphQLClient, gql } from "graphql-request";
 import { jsonToGraphQLQuery } from 'json-to-graphql-query';
-const API_URL = 'http://localhost:3000/graphql';
+const API_URL = 'http://localhost:4000/graphql';
 
 const graphQLClient = new GraphQLClient(API_URL, {
     headers: {

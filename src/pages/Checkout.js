@@ -1,4 +1,3 @@
-import SearchNavBarImage from "../components/navbar/image/SearchNavBarImage"
 import { Row, Col, Form, Alert, Container } from "react-bootstrap";
 import CompletedOrderButton from "../components/completed-order/CompletedOrderButton";
 
@@ -6,8 +5,6 @@ function Checkout() {
 
     return(
         <>
-        <SearchNavBarImage/>
-        
         <Row className="p-3 mx-2">
             
                 <h5>Delivery</h5> 

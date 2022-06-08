@@ -1,11 +1,8 @@
-import SearchNavBarImage from "../components/navbar/image/SearchNavBarImage";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 
 function ShopList() {
     return (
       <>
-      <SearchNavBarImage/>
-
       <Container>
           <Row className="justify-content-md-center">
               <Col className="mx-auto">

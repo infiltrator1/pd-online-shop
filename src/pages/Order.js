@@ -1,13 +1,10 @@
 import { Col, Row, Image, CloseButton, Alert } from "react-bootstrap";
-import SearchNavBarImage from "../components/navbar/image/SearchNavBarImage"
 import CheckoutButton from "../components/checkout/CheckoutButton";
 
 function Order() {
 
     return (
-      <> 
-      <SearchNavBarImage/>
-
+      <>
       <h5 className="mt-3 mx-2">My basket</h5>
       
       <Alert variant="light">
