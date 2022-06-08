@@ -1,9 +1,9 @@
 import SearchNavBarImage from "../components/navbar/image/SearchNavBarImage";
-import WomenClothes from "../components/clothes/WomenClothes";
-import FiltersWomen from "../components/filters/FiltersWomen";
+import KidsClothes from "../components/clothes/KidsClothes";
+import FiltersKids from "../components/filters/FiltersKids";
 import { Col, Accordion } from "react-bootstrap";
 
-function Women() {
+function Kids() {
     return (
       <>
       <SearchNavBarImage/>
@@ -15,16 +15,16 @@ function Women() {
                 <div className="fw-bold">Filters</div>
              </Accordion.Header>
              <Accordion.Body>
-                 <FiltersWomen/>
+                 <FiltersKids/>
              </Accordion.Body>
            </Accordion.Item>
           </Accordion>
       </Col>
       
-           <WomenClothes/>
+           <KidsClothes/>
       
     </>     
     );
   }
   
-export default Women;
+export default Kids;

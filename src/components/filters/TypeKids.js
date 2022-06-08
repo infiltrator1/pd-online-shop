@@ -1,39 +1,31 @@
 import { Form } from "react-bootstrap";
 
-function TypeMen() {
+function TypeKids() {
 
       const checkboxes = [
-            {
-                  label: "T-shirts",
-                  type: "t-shirts",
-            },
             {
                   label: "Shirts",
                   type: "shirts",
             },
-            {
-                  label: "Sweatshirts & Hoodies",
-                  type: "sweatshirts&hoodies",
-            }, 
             { 
-                label: "Sweaters & Cardigans",
-                type: "sweaters&cardigans",
+                  label: "Sweaters",
+                  type: "sweaters",
             },
             {
-                  label: "Vests",
-                  type: "vests",
+                  label: "Trousers",
+                  type: "trousers",
             },
             {
                   label: "Shorts",
                   type: "shorts",
             },
             {
-                  label: "Jeans",
-                  type: "jeans",
+                  label: "Dresses",
+                  type: "dresses",
             },
             {
-                  label: "Pants",
-                  type: "pants",
+                  label: "Skirts",
+                  type: "skirts",
             },
         ]
     
@@ -65,4 +57,4 @@ function TypeMen() {
         )
     }
 
-export default TypeMen;
+export default TypeKids;

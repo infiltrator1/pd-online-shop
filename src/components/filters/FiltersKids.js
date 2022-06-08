@@ -1,9 +1,10 @@
 import SortBy from "./SortBy";
-import TypeMen from "./TypeMen";
-import Size from "./Size";
+import TypeKids from "./TypeKids";
+import SizeKids from "./SizeKids";
 import { Card, Button } from "react-bootstrap";
+import GenderKids from "./GenderKids";
 
-function FiltersMen() {
+function FiltersKids() {
 
     return(
         
@@ -11,8 +12,9 @@ function FiltersMen() {
             <Card.Body>
                 <Card.Title className="mb-3">Filters</Card.Title>
                     <SortBy/>
-                    <TypeMen/>
-                    <Size/>
+                    <GenderKids/>
+                    <TypeKids/>
+                    <SizeKids/>
                     <div className="d-grip gap-2"> 
                         <Button variant="secondary">Search</Button>
                     </div>
@@ -21,4 +23,4 @@ function FiltersMen() {
     )
 }
 
-export default FiltersMen;
+export default FiltersKids;

@@ -2,11 +2,11 @@ import { Row, Container } from "react-bootstrap";
 import Cloth from "./Cloth";
 import { useGetClothes } from "../../graphql/useRequest";
 
-function WomenClothes() {
+function KidsClothes() {
     
 
     //const { data, error, isLoading, isSuccess } = useGetClothes({type: "men", category: ["trousers"]});
-    const { data } = useGetClothes({type: "women"});
+    const { data } = useGetClothes({type: "kids"});
    // console.log(data);
     return(
         <Container fluid>   
@@ -29,4 +29,4 @@ function WomenClothes() {
     )
 }
 
-export default WomenClothes;
+export default KidsClothes;

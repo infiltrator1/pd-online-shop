@@ -1,9 +1,8 @@
 import { Form } from "react-bootstrap";
 
-function Size() {
+function GenderKids() {
     
-    const checkboxes = ['34', '36', '38', '40', '42', '44'];
-    //'XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL',
+    const checkboxes = ['Girl', 'Boy'];
 
 
     return(
@@ -11,7 +10,7 @@ function Size() {
             className="mb-3" 
             controlId="filterForm.ControlCheckboxes">
         <Form.Label>
-            <h6>Size</h6>
+            <h6>Gender</h6>
         </Form.Label>
         <div className="row justify-content-center">
             <div className="col-md-4 col-12">
@@ -33,4 +32,4 @@ function Size() {
     )
 }
 
-export default Size;
+export default GenderKids;

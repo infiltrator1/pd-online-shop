@@ -9,7 +9,7 @@ function Men() {
         <SearchNavBarImage/>
         
         <Col>
-           <Accordion className="bg-light mt-2">
+           <Accordion className="bg-light  mt-2">
              <Accordion.Item eventKey="0">
                <Accordion.Header>
                  <div className="fw-bold">Filters</div>   
@@ -21,8 +21,6 @@ function Men() {
             </Accordion>
         </Col>
         <Col>
-             <MenClothes/>
-             <MenClothes/>
              <MenClothes/>
         </Col>  
       </>        

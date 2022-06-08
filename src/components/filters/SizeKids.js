@@ -1,9 +1,8 @@
 import { Form } from "react-bootstrap";
 
-function Size() {
+function SizeKids() {
     
-    const checkboxes = ['34', '36', '38', '40', '42', '44'];
-    //'XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL',
+    const checkboxes = ['134', '140', '146', '152', '158'];
 
 
     return(
@@ -33,4 +32,4 @@ function Size() {
     )
 }
 
-export default Size;
+export default SizeKids;
