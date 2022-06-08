@@ -1,27 +1,16 @@
 import MenClothes from "../components/clothes/MenClothes";
 import FiltersMen from "../components/filters/FiltersMen";
-import { Col, Accordion } from "react-bootstrap";
+import FiltersContainer from "../components/filters/FiltersContainer";
 
 function Men() {
     return (
-      <>
-        <Col>
-           <Accordion className="bg-light  mt-2">
-             <Accordion.Item eventKey="0">
-               <Accordion.Header>
-                 <div className="fw-bold">Filters</div>   
-               </Accordion.Header>
-               <Accordion.Body>
-                   <FiltersMen/>
-               </Accordion.Body>
-             </Accordion.Item>
-            </Accordion>
-        </Col>
-        <Col>
-             <MenClothes/>
-        </Col>  
-      </>        
+        <>
+            <FiltersContainer>
+                <FiltersMen/>
+            </FiltersContainer>
+            <MenClothes/>
+        </>
     );
-  }
-  
+}
+
 export default Men;

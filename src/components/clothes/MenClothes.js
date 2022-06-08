@@ -1,25 +1,25 @@
-import { Row, Container } from "react-bootstrap";
+import {Row, Container} from "react-bootstrap";
 import Cloth from "./Cloth";
-import { useGetClothes } from "../../graphql/useRequest";
+import {useGetClothes} from "../../graphql/useRequest";
+import {useEffect} from "react";
+import {queryClient} from "../../index";
 
 function MenClothes() {
-    
 
+    useEffect(() => {
+        queryClient.removeQueries('getClothes')
+    }, [])
     //const { data, error, isLoading, isSuccess } = useGetClothes({type: "men", category: ["trousers"]});
-    const { data } = useGetClothes({type: "men"});
-   // console.log(data);
-    return(
-        <Container fluid>   
-            <Row className="justify-content-center mt-2" xl={5}>
-                    {data && data.clothes.map(cloth => <Cloth 
-                                                key={cloth._id}
-                                                id={cloth._id}
-                                                name={cloth.name}
-                                                image={cloth.image}
-                                            // description={cloth.description}
-                                                price={cloth.price}
-                                            ></Cloth>)}
-                </Row>
+    const {data} = useGetClothes({type: "men"});
+    // console.log(data);
+    return (
+        <Container>
+            <Row className="mt-1 mb-5">
+                {data && data.clothes.map(cloth => <Cloth
+                    key={cloth._id}
+                    cloth={cloth}
+                ></Cloth>)}
+            </Row>
         </Container>
     )
 }

@@ -7,9 +7,9 @@ import {Button} from "react-bootstrap";
 import {useSelector, useDispatch} from 'react-redux'
 import {useGetClothes} from "../../graphql/useRequest";
 
-function OrderButton({productId, buttonSize}) {
+function OrderButton({cloth, buttonSize}) {
     function addToBasket() {
-        console.log(productId)
+        console.log(cloth)
     }
     return (
         <Button variant="outline-success"
