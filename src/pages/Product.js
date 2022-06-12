@@ -1,4 +1,4 @@
-import { Col, Row, Form, Button, CarouselItem } from "react-bootstrap";
+import { Col, Row, Form } from "react-bootstrap";
 import SizeButton from "./product/SizeButton";
 import Delivery from "./product/Delivery";
 import Returns from "./product/Returns";
@@ -66,7 +66,9 @@ function Product() {
             <div>      
                 <SizeButton/>    
             </div>
-            <OrderButton/>
+            <div className="mt-5">
+                <OrderButton/>
+            </div>    
             <div className="mt-5 pt-5" >
               <Delivery/>                  
               <Returns/>        

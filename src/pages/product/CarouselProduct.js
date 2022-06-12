@@ -1,4 +1,4 @@
-import {Col, Carousel, Form} from "react-bootstrap";
+import {Col, Carousel} from "react-bootstrap";
 import {useParams} from "react-router-dom";
 import {useGetCloth} from "../../graphql/useRequest"
 

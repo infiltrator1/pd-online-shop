@@ -12,11 +12,13 @@ function OrderButton({cloth, buttonSize}) {
         console.log(cloth)
     }
     return (
+        <Link to={`/order/${12345}`}>
         <Button variant="outline-success"
                 size={buttonSize}
                 onClick={addToBasket}>
             Add to cart
         </Button>
+        </Link>
     )
 }
 

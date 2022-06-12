@@ -80,12 +80,17 @@ function Checkout() {
                         ))}
                     </Form>
                     </Alert>
-                    <div className="text-end mt-5">
-                    <CompletedOrderButton/>
-                    </div>
-            </Col>
-        </Row>
+                    
+                    <Row className="mt-4">
+                        <div className="text-end mt-5">
+                            <CompletedOrderButton/>
+                        </div>
+                    </Row>
+                    
+                </Col>
+            </Row>
         </Container>
+            
         </>
     )
 }
